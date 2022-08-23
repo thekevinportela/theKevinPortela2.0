@@ -1,5 +1,5 @@
 import Work from "./../components/Work";
-import { Box, Center, Text } from "@chakra-ui/react";
+import { Box } from "@chakra-ui/react";
 import { useEffect, useState } from "react";
 import AboutMe from "../components/AboutMe";
 import Header from "../components/Header";

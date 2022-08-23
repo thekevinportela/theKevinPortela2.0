@@ -1,4 +1,4 @@
-import { Box, Center, Icon, Image, Text } from "@chakra-ui/react";
+import { Box, Center, Icon, Text } from "@chakra-ui/react";
 import {
   SiReact,
   SiExpo,
