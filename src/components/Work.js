@@ -1,4 +1,4 @@
-import { Box, Center, Grid, Image, Text } from "@chakra-ui/react";
+import { Box, Center, Image, Text } from "@chakra-ui/react";
 
 const Work = () => {
   return (

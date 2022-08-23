@@ -1,7 +1,7 @@
 import { Box, Center, Text } from "@chakra-ui/react";
 import React from "react";
 
-const ShowCase = ({}) => {
+const ShowCase = () => {
   return (
     <Center className="ShowCase">
       <Box
