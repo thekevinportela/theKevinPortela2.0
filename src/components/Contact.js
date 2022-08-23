@@ -18,7 +18,6 @@ const Contact = () => {
   const handleName = (e) => {
     setName(e.target.value);
   };
-  console.log(name);
   const handleEmail = (e) => {
     setEmail(e.target.value);
   };
@@ -78,7 +77,7 @@ const Contact = () => {
             alignItems: "center",
           }}
         >
-          <input type="hidden" name="contact-form" value="contact" />
+          <input type="hidden" name="contact" value="contact" />
           <FormControl my={5} isRequired>
             <Input
               bg={"white"}
