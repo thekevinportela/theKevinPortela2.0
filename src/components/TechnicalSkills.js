@@ -60,14 +60,14 @@ const TechnicalSkills = ({ width }) => {
         <Center mx={iconSpace} flexDirection={"column"}>
           <Icon color={iconColor} h={iconSize} w={iconSize} as={SiJavascript} />
           <Text color={iconColor} fontSize={iconText}>
-            React Native
+            JavaScript
           </Text>
         </Center>
 
         <Center mx={iconSpace} flexDirection={"column"}>
           <Icon color={iconColor} h={iconSize} w={iconSize} as={SiTypescript} />
           <Text color={iconColor} fontSize={iconText}>
-            Expo
+            TypeScript
           </Text>
         </Center>
 
@@ -81,7 +81,7 @@ const TechnicalSkills = ({ width }) => {
         <Center mx={iconSpace} flexDirection={"column"}>
           <Icon color={iconColor} h={iconSize} w={iconSize} as={SiHtml5} />
           <Text color={iconColor} fontSize={iconText}>
-            CSS
+            HTML
           </Text>
         </Center>
       </Center>
