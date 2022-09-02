@@ -48,7 +48,13 @@ const Contact = () => {
         message,
       }),
     })
-      .then(() => alert("Success!"))
+      .then(() => {
+        alert("Success!");
+        setName("");
+        setEmail("");
+        setSubject("");
+        setMessage("");
+      })
       .catch((error) => alert(error));
 
     e.preventDefault();
