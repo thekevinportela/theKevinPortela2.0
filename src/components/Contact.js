@@ -41,7 +41,7 @@ const Contact = () => {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
       body: encode({
-        "contact-form": "contact",
+        "form-name": "contact",
         name,
         email,
         subject,
@@ -70,6 +70,9 @@ const Contact = () => {
       </Text>
       <Box display={"flex"} flexDirection={"column"} w={"45vw"}>
         <form
+          name="contact"
+          data-netlify="true"
+          data-netlify-honeypot="bot-field"
           onSubmit={handleSubmit}
           style={{
             display: "flex",
