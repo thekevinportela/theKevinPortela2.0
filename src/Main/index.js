@@ -1,6 +1,5 @@
 import Work from "./../components/Work";
 import { Box } from "@chakra-ui/react";
-import { useEffect, useState } from "react";
 import AboutMe from "../components/AboutMe";
 import Header from "../components/Header";
 import ShowCase from "../components/ShowCase";
