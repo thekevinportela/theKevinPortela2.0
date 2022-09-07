@@ -6,11 +6,11 @@ import { MY_SKILLS } from "../portfolioData";
 const iconSize = 20;
 const iconText = 26;
 const iconColor = "#aaa";
-const iconSpace = 20;
+const iconSpace = { base: 10, md: 20 };
 
 const TechnicalSkills = ({ width }) => {
   return (
-    <Center bgColor={"#000"} flexDir={"column"} mb={200}>
+    <Center bgColor={"#000"} flexDir={"column"} mb={{ base: 100, md: 200 }}>
       <Text mb={2} color={"#fff"} fontSize={"2xl"}>
         TECHNICAL SKILLS
       </Text>
@@ -21,7 +21,12 @@ const TechnicalSkills = ({ width }) => {
         bgColor={"#a2a2a2"}
       ></Box>
 
-      <Grid mt={20} templateColumns="repeat(4, 1fr)" gap={0} rowGap={20}>
+      <Grid
+        mt={20}
+        templateColumns={{ base: "repeat(2, 1fr)", md: "repeat(4, 1fr)" }}
+        gap={0}
+        rowGap={20}
+      >
         {MY_SKILLS.map((skill, i) => {
           return (
             <GridItem>
@@ -32,7 +37,11 @@ const TechnicalSkills = ({ width }) => {
                   w={iconSize}
                   as={skill.icon}
                 />
-                <Text color={iconColor} fontSize={iconText}>
+                <Text
+                  textAlign={"center"}
+                  color={iconColor}
+                  fontSize={iconText}
+                >
                   {skill.name}
                 </Text>
               </Center>

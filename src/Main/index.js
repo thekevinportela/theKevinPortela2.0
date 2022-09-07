@@ -6,36 +6,24 @@ import Header from "../components/Header";
 import ShowCase from "../components/ShowCase";
 import TechnicalSkills from "../components/TechnicalSkills";
 import Contact from "../components/Contact";
+import Footer from "../components/Footer";
 
 const Main = () => {
-  const [width, setWidth] = useState(window.innerWidth);
-
-  function handleWindowSizeChange() {
-    setWidth(window.innerWidth);
-  }
-  useEffect(() => {
-    window.addEventListener("resize", handleWindowSizeChange);
-    return () => {
-      window.removeEventListener("resize", handleWindowSizeChange);
-    };
-  }, []);
-
-  // const isMobile = width <= 768;
-
   return (
     <Box
       bg={"black"}
-      minWidth={1000}
       display={"flex"}
       flex={1}
+      width="full"
       flexDirection={"column"}
     >
       <Header />
       <ShowCase />
       <AboutMe />
-      <TechnicalSkills width={width} />
+      <TechnicalSkills />
       <Work />
       <Contact />
+      <Footer />
     </Box>
   );
 };

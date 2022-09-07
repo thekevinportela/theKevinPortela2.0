@@ -61,7 +61,12 @@ const Contact = () => {
   };
 
   return (
-    <Center className="Contact" bgColor={"#000"} flexDir={"column"} mb={200}>
+    <Center
+      className="Contact"
+      bgColor={"#000"}
+      flexDir={"column"}
+      mb={{ base: 100, md: 200 }}
+    >
       <Text mb={2} color={"#fff"} fontSize={"2xl"}>
         CONTACT ME
       </Text>
@@ -74,7 +79,11 @@ const Contact = () => {
       <Text color={"#fff"} my={4}>
         Here is how you can reach me.
       </Text>
-      <Box display={"flex"} flexDirection={"column"} w={"45vw"}>
+      <Box
+        display={"flex"}
+        flexDirection={"column"}
+        w={{ base: "80%", md: "80%", lg: "45vw" }}
+      >
         <form
           name="contact"
           data-netlify="true"
@@ -143,7 +152,7 @@ const Contact = () => {
             borderColor={"white"}
             variant="outline"
             color={"white"}
-            w={"22vw"}
+            w={{ base: "80%", md: "80%", lg: "22vw" }}
             type="submit"
           >
             Submit

@@ -4,7 +4,12 @@ import { MY_WORK } from "../portfolioData";
 
 const Work = () => {
   return (
-    <Center className="Work" bgColor={"#000"} flexDir={"column"} mb={200}>
+    <Center
+      className="Work"
+      bgColor={"#000"}
+      flexDir={"column"}
+      mb={{ base: 100, md: 200 }}
+    >
       <Text mb={2} color={"#fff"} fontSize={"2xl"}>
         MY WORK
       </Text>
@@ -18,7 +23,14 @@ const Work = () => {
         Check out some of my projects!
       </Text>
 
-      <Grid templateColumns="repeat(3, 1fr)" gap={2}>
+      <Grid
+        templateColumns={{
+          base: "repeat(1, 1fr)",
+          md: "repeat(2, 1fr)",
+          xl: "repeat(3, 1fr)",
+        }}
+        gap={2}
+      >
         {MY_WORK.map((project, i) => {
           return (
             <GridItem>
@@ -33,12 +45,16 @@ const Work = () => {
                 {project.image ? (
                   <Image
                     src={project.image}
-                    h={300}
-                    w={450}
+                    h={{ base: 250, md: 300 }}
+                    w={{ base: 375, md: 450 }}
                     objectFit={"cover"}
                   />
                 ) : (
-                  <Box h={300} w={450} bg={"#ccc"}></Box>
+                  <Box
+                    h={{ base: 250, md: 300 }}
+                    w={{ base: 375, md: 450 }}
+                    bg={"#ccc"}
+                  ></Box>
                 )}
               </motion.div>
             </GridItem>

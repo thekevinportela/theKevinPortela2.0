@@ -1,4 +1,4 @@
-import { HStack, Text } from "@chakra-ui/react";
+import { Box, HStack, Text, useBreakpointValue } from "@chakra-ui/react";
 import { useState } from "react";
 import { Link } from "react-scroll";
 
@@ -9,11 +9,44 @@ const Header = () => {
     setSelected(n);
   };
 
+  const offset = useBreakpointValue({
+    base: -140,
+    md: -100,
+  });
+
+  const LINK_DATA = [
+    {
+      label: "HOME",
+      to: "ShowCase",
+      offset: offset,
+      id: 1,
+    },
+    {
+      label: "ABOUT",
+      to: "AboutMe",
+      offset: offset,
+      id: 2,
+    },
+    {
+      label: "WORK",
+      to: "Work",
+      offset: offset,
+      id: 3,
+    },
+    {
+      label: "CONTACT",
+      to: "Contact",
+      offset: offset,
+      id: 4,
+    },
+  ];
+
   return (
     <HStack
+      flexDirection={{ base: "column", md: "row" }}
       position={"fixed"}
       w={"full"}
-      justifyContent={"space-between"}
+      justifyContent={{ base: "space-around", md: "space-between" }}
       bg={"black"}
       zIndex={10}
     >
@@ -31,65 +64,41 @@ const Header = () => {
         </Text>
       </Link>
       <HStack px={5}>
-        <Link
-          to="ShowCase"
-          spy={true}
-          smooth={true}
-          offset={0}
-          duration={600}
-          onClick={() => clicked(1)}
-          style={{ cursor: "pointer" }}
-        >
-          <Text color={selected === 1 ? "gold" : "white"}>HOME</Text>
-        </Link>
-        <Link
-          to="AboutMe"
-          spy={true}
-          smooth={true}
-          offset={-100}
-          duration={600}
-          onClick={() => clicked(2)}
-          style={{ cursor: "pointer", marginLeft: 20 }}
-        >
-          <Text color={selected === 2 ? "gold" : "white"}>ABOUT</Text>
-        </Link>
-        <Link
-          to="Work"
-          spy={true}
-          smooth={true}
-          offset={-100}
-          duration={600}
-          onClick={() => clicked(3)}
-          style={{ cursor: "pointer", marginLeft: 20 }}
-        >
-          <Text color={selected === 3 ? "gold" : "white"}>WORK</Text>
-        </Link>
-        <Link
-          to="Contact"
-          spy={true}
-          smooth={true}
-          offset={-100}
-          duration={600}
-          onClick={() => clicked(4)}
-          style={{ cursor: "pointer", marginLeft: 20 }}
-        >
-          <Text color={selected === 4 ? "gold" : "white"}>CONTACT</Text>
-        </Link>
+        {LINK_DATA.map((link) => (
+          <RenderLink
+            label={link.label}
+            to={link.to}
+            offset={link.offset}
+            id={link.id}
+            selected={selected}
+            clicked={clicked}
+          />
+        ))}
       </HStack>
-
-      {/* <Link
-        activeClass="active"
-        to="test1"
-        spy={true}
-        smooth={true}
-        offset={50}
-        duration={500}
-        onSetActive={this.handleSetActive}
-      >
-        Test 1
-      </Link> */}
     </HStack>
   );
 };
 
 export default Header;
+
+const RenderLink = ({ label, to, offset, id, selected, clicked }) => {
+  return (
+    <Box p={4}>
+      <Link
+        to={to}
+        spy={true}
+        smooth={true}
+        offset={offset}
+        duration={600}
+        onClick={() => clicked(id)}
+        style={{
+          cursor: "pointer",
+        }}
+      >
+        <Text color={selected === id ? "gold" : "white"} fontSize={16}>
+          {label}
+        </Text>
+      </Link>
+    </Box>
+  );
+};

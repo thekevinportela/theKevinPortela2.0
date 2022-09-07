@@ -73,34 +73,34 @@ export const MY_WORK = [
     name: "Todo App",
     image: IMAGEs.todoApp,
   },
-  {
-    id: 4,
-    name: "",
-    image: undefined,
-  },
-  {
-    id: 5,
-    name: "",
-    image: undefined,
-  },
-  {
-    id: 6,
-    name: "",
-    image: undefined,
-  },
-  {
-    id: 7,
-    name: "",
-    image: undefined,
-  },
-  {
-    id: 8,
-    name: "",
-    image: undefined,
-  },
-  {
-    id: 9,
-    name: "",
-    image: undefined,
-  },
+  // {
+  //   id: 4,
+  //   name: "",
+  //   image: undefined,
+  // },
+  // {
+  //   id: 5,
+  //   name: "",
+  //   image: undefined,
+  // },
+  // {
+  //   id: 6,
+  //   name: "",
+  //   image: undefined,
+  // },
+  // {
+  //   id: 7,
+  //   name: "",
+  //   image: undefined,
+  // },
+  // {
+  //   id: 8,
+  //   name: "",
+  //   image: undefined,
+  // },
+  // {
+  //   id: 9,
+  //   name: "",
+  //   image: undefined,
+  // },
 ];

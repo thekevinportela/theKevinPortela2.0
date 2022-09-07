@@ -3,7 +3,12 @@ import React from "react";
 
 const AboutMe = () => {
   return (
-    <Center className="AboutMe" bgColor={"#000"} flexDir={"column"} mb={200}>
+    <Center
+      className="AboutMe"
+      bgColor={"#000"}
+      flexDir={"column"}
+      mb={{ base: 100, md: 200 }}
+    >
       <Text mb={2} color={"#fff"} fontSize={"2xl"}>
         ABOUT ME
       </Text>
@@ -17,7 +22,7 @@ const AboutMe = () => {
         Let me tell you a little about myself and what I do...
       </Text>
 
-      <Center pt={4} bg={"black"} flexDir={"row"}>
+      <Center pt={4} bg={"black"} flexDir={{ base: "column", lg: "row" }}>
         <Image
           objectFit={"cover"}
           src={require("../assets/imgs/about.jpg")}
@@ -30,13 +35,11 @@ const AboutMe = () => {
           flexDir={"column"}
           margin={5}
           borderRadius={"2xl"}
-          h={"2xs"}
+          h={{ base: "md", md: "2xs" }}
           bg={"#000"}
           maxWidth={700}
           borderLeftColor={"#aaa"}
           borderLeftWidth={5}
-          // borderRightColor={"#fff"}
-          // borderRightWidth={5}
         >
           <Text color={"#fff"} fontSize={20} textAlign={"center"}>
             YOUR PROJECT IS IN GOOD HANDS
