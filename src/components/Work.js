@@ -1,6 +1,7 @@
 import { Grid, Box, Center, GridItem, Image, Text } from "@chakra-ui/react";
 import { motion } from "framer-motion";
 import { MY_WORK } from "../portfolioData";
+import Divider from "./Divider";
 
 const Work = () => {
   return (
@@ -13,12 +14,7 @@ const Work = () => {
       <Text mb={2} color={"#fff"} fontSize={"2xl"}>
         MY WORK
       </Text>
-      <Box
-        borderRadius={"full"}
-        height={"0.5"}
-        width={10}
-        bgColor={"#a2a2a2"}
-      ></Box>
+      <Divider />
       <Text color={"#fff"} my={4}>
         Check out some of my projects!
       </Text>
@@ -41,6 +37,7 @@ const Work = () => {
                 }}
                 viewport={{ once: false, amount: 0.2 }}
                 whileHover={{ scale: 1.2, zIndex: 100 }}
+                whileTap={{ scale: 0.9, zIndex: 100 }}
               >
                 {project.image ? (
                   <Image
@@ -48,6 +45,7 @@ const Work = () => {
                     h={{ base: 250, md: 300 }}
                     w={{ base: 375, md: 450 }}
                     objectFit={"cover"}
+                    borderRadius={"md"}
                   />
                 ) : (
                   <Box

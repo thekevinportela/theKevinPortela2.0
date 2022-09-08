@@ -1,4 +1,6 @@
 import { Box, Center, Text } from "@chakra-ui/react";
+import Divider from "./Divider";
+import Typewriter from "typewriter-effect";
 import React from "react";
 
 const ShowCase = () => {
@@ -34,9 +36,24 @@ const ShowCase = () => {
             fontSize={{ base: "2xl", md: "5xl" }}
             color={"#fff"}
           >
-            I AM KEVIN THE MOBILE DEVELOPER
+            I AM KEVIN THE
           </Text>
+          <Text color={"#fff"} fontSize={{ base: "2xl", md: "5xl" }} pb={2}>
+            <Typewriter
+              options={{
+                strings: [
+                  "MOBILE DEVELOPER",
+                  "WEB DEVELOPER",
+                  "SOFTWARE ENGINEER",
+                ],
+                autoStart: true,
+                loop: true,
+              }}
+            />
+          </Text>
+          <Divider />
           <Text
+            py={4}
             textAlign={"center"}
             fontSize={{ base: "sm", md: "xl" }}
             color={"#fff"}

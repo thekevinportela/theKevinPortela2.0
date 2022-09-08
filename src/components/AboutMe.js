@@ -1,5 +1,6 @@
 import { Box, Center, Image, Text } from "@chakra-ui/react";
 import React from "react";
+import Divider from "./Divider";
 
 const AboutMe = () => {
   return (
@@ -12,12 +13,7 @@ const AboutMe = () => {
       <Text mb={2} color={"#fff"} fontSize={"2xl"}>
         ABOUT ME
       </Text>
-      <Box
-        borderRadius={"full"}
-        height={"0.5"}
-        width={10}
-        bgColor={"#a2a2a2"}
-      ></Box>
+      <Divider />
       <Text color={"#fff"} my={4}>
         Let me tell you a little about myself and what I do...
       </Text>
@@ -34,7 +30,7 @@ const AboutMe = () => {
         <Center
           flexDir={"column"}
           margin={5}
-          borderRadius={"2xl"}
+          borderRadius={"3xl"}
           h={{ base: "md", md: "2xs" }}
           bg={"#000"}
           maxWidth={700}
@@ -51,14 +47,14 @@ const AboutMe = () => {
             textAlign={"left"}
             lineHeight={"24px"}
           >
-            I am an innovative Mobile Engineer with over 1 year of mobile
-            application development experience as a key member of Caribu's
-            development team building cross-platform native and web applications
-            using React Native and front-end knowledge for upgradation support.
-            Dedicated to continuously discovering, evaluating, and implementing
-            new technologies to maximize development efficiency. Seeking to
-            leverage and expand proven competence in software feature
-            development, implementation, and problem-solving.
+            Innovative Mobile Engineer with over 1 year of mobile application
+            development experience as a key member of Caribu's development team
+            building cross-platform native and web applications using React
+            Native and front-end knowledge for upgradation support. Dedicated to
+            continuously discovering, evaluating, and implementing new
+            technologies to maximize development efficiency. Seeking to leverage
+            and expand proven competence in software feature development,
+            implementation, and problem-solving.
           </Text>
         </Center>
       </Center>

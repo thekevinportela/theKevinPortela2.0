@@ -8,6 +8,7 @@ import {
   Textarea,
 } from "@chakra-ui/react";
 import React, { useState } from "react";
+import Divider from "./Divider";
 
 const Contact = () => {
   const [name, setName] = useState("");
@@ -70,12 +71,7 @@ const Contact = () => {
       <Text mb={2} color={"#fff"} fontSize={"2xl"}>
         CONTACT ME
       </Text>
-      <Box
-        borderRadius={"full"}
-        height={"0.5"}
-        width={10}
-        bgColor={"#a2a2a2"}
-      ></Box>
+      <Divider />
       <Text color={"#fff"} my={4}>
         Here is how you can reach me.
       </Text>
