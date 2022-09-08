@@ -59,11 +59,11 @@ const Header = () => {
         onClick={() => clicked(0)}
         style={{ cursor: "pointer" }}
       >
-        <Text px={5} color={"white"} fontSize={60}>
+        <Text px={{ base: 0, md: 5 }} color={"white"} fontSize={60}>
           KP
         </Text>
       </Link>
-      <HStack px={5}>
+      <HStack px={{ base: 0, md: 5 }}>
         {LINK_DATA.map((link) => (
           <RenderLink
             label={link.label}
@@ -83,7 +83,8 @@ export default Header;
 
 const RenderLink = ({ label, to, offset, id, selected, clicked }) => {
   return (
-    <Box p={4}>
+    // <Box p={4}>
+    <Box px={{ base: 2, md: 4 }} pb={{ base: 3, md: 0 }}>
       <Link
         to={to}
         spy={true}

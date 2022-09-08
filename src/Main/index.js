@@ -12,9 +12,10 @@ const Main = () => {
     <Box
       bg={"black"}
       display={"flex"}
-      flex={1}
+      // flex={1}
       width="full"
       flexDirection={"column"}
+      overflow="hidden"
     >
       <Header />
       <ShowCase />
