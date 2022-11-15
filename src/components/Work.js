@@ -29,7 +29,7 @@ const Work = () => {
       >
         {MY_WORK.map((project, i) => {
           return (
-            <a target={"_blank"} href={project.link}>
+            <a target={"_blank"} href={project.link} rel="noreferrer">
               <GridItem>
                 <motion.div
                   initial={{ opacity: 0 }}
