@@ -29,33 +29,35 @@ const Work = () => {
       >
         {MY_WORK.map((project, i) => {
           return (
-            <GridItem>
-              <motion.div
-                initial={{ opacity: 0 }}
-                whileInView={{
-                  opacity: 1,
-                }}
-                viewport={{ once: false, amount: 0.2 }}
-                whileHover={{ scale: 1.2, zIndex: 100 }}
-                whileTap={{ scale: 0.9, zIndex: 100 }}
-              >
-                {project.image ? (
-                  <Image
-                    src={project.image}
-                    h={{ base: 250, md: 300 }}
-                    w={{ base: 375, md: 450 }}
-                    objectFit={"cover"}
-                    borderRadius={"md"}
-                  />
-                ) : (
-                  <Box
-                    h={{ base: 250, md: 300 }}
-                    w={{ base: 375, md: 450 }}
-                    bg={"#ccc"}
-                  ></Box>
-                )}
-              </motion.div>
-            </GridItem>
+            <a target={"_blank"} href={project.link}>
+              <GridItem>
+                <motion.div
+                  initial={{ opacity: 0 }}
+                  whileInView={{
+                    opacity: 1,
+                  }}
+                  viewport={{ once: false, amount: 0.2 }}
+                  whileHover={{ scale: 1.2, zIndex: 100 }}
+                  whileTap={{ scale: 0.9, zIndex: 100 }}
+                >
+                  {project.image ? (
+                    <Image
+                      src={project.image}
+                      h={{ base: 250, md: 300 }}
+                      w={{ base: 375, md: 450 }}
+                      objectFit={"cover"}
+                      borderRadius={"md"}
+                    />
+                  ) : (
+                    <Box
+                      h={{ base: 250, md: 300 }}
+                      w={{ base: 375, md: 450 }}
+                      bg={"#ccc"}
+                    ></Box>
+                  )}
+                </motion.div>
+              </GridItem>
+            </a>
           );
         })}
       </Grid>

@@ -62,16 +62,19 @@ export const MY_WORK = [
     id: 1,
     name: "Number Guesser",
     image: IMAGEs.numberGuesser,
+    link: "https://github.com/thekevinportela/NumberGuesser",
   },
   {
     id: 2,
     name: "Weather App",
     image: IMAGEs.weatherApp,
+    link: "https://github.com/thekevinportela/weather-app",
   },
   {
     id: 3,
     name: "Todo App",
     image: IMAGEs.todoApp,
+    link: "https://github.com/thekevinportela/todo-app",
   },
   // {
   //   id: 4,
