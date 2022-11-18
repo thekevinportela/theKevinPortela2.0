@@ -12,6 +12,7 @@ const IMAGEs = {
   numberGuesser: require("./assets/imgs/NumberGuesser.jpeg"),
   weatherApp: require("./assets/imgs/WeatherApp.jpeg"),
   todoApp: require("./assets/imgs/TodoApp.jpeg"),
+  githubFinder: require("./assets/imgs/GithubFinder.png"),
 };
 
 export const MY_SKILLS = [
@@ -76,34 +77,10 @@ export const MY_WORK = [
     image: IMAGEs.todoApp,
     link: "https://github.com/thekevinportela/todo-app",
   },
-  // {
-  //   id: 4,
-  //   name: "",
-  //   image: undefined,
-  // },
-  // {
-  //   id: 5,
-  //   name: "",
-  //   image: undefined,
-  // },
-  // {
-  //   id: 6,
-  //   name: "",
-  //   image: undefined,
-  // },
-  // {
-  //   id: 7,
-  //   name: "",
-  //   image: undefined,
-  // },
-  // {
-  //   id: 8,
-  //   name: "",
-  //   image: undefined,
-  // },
-  // {
-  //   id: 9,
-  //   name: "",
-  //   image: undefined,
-  // },
+  {
+    id: 4,
+    name: "Github Finder",
+    image: IMAGEs.githubFinder,
+    link: "https://github.com/thekevinportela/GithubFinderRN",
+  },
 ];
