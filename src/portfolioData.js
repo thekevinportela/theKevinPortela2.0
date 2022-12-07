@@ -61,9 +61,9 @@ export const MY_SKILLS = [
 export const MY_WORK = [
   {
     id: 1,
-    name: "Number Guesser",
-    image: IMAGEs.numberGuesser,
-    link: "https://github.com/thekevinportela/NumberGuesser",
+    name: "Github Finder",
+    image: IMAGEs.githubFinder,
+    link: "https://github.com/thekevinportela/GithubFinderRN",
   },
   {
     id: 2,
@@ -73,14 +73,14 @@ export const MY_WORK = [
   },
   {
     id: 3,
-    name: "Todo App",
-    image: IMAGEs.todoApp,
-    link: "https://github.com/thekevinportela/todo-app",
+    name: "Number Guesser",
+    image: IMAGEs.numberGuesser,
+    link: "https://github.com/thekevinportela/NumberGuesser",
   },
   {
     id: 4,
-    name: "Github Finder",
-    image: IMAGEs.githubFinder,
-    link: "https://github.com/thekevinportela/GithubFinderRN",
+    name: "Todo App",
+    image: IMAGEs.todoApp,
+    link: "https://github.com/thekevinportela/todo-app",
   },
 ];

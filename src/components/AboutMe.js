@@ -47,7 +47,7 @@ const AboutMe = () => {
             textAlign={"left"}
             lineHeight={"24px"}
           >
-            Passionate Mobile Engineer with over 1 year of mobile application
+            Passionate Software Engineer with over 1 year of mobile application
             development experience as a key member of Caribu's development team
             building cross-platform native and web applications using React
             Native and front-end knowledge for upgradation support. Dedicated to
