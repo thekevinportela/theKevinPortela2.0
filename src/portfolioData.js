@@ -13,6 +13,9 @@ const IMAGEs = {
   weatherApp: require("./assets/imgs/WeatherApp.jpeg"),
   todoApp: require("./assets/imgs/TodoApp.jpeg"),
   githubFinder: require("./assets/imgs/GithubFinder.png"),
+  hungryDevs: require("./assets/imgs/HungryDevs.png"),
+  githubFinderWeb: require("./assets/imgs/GithubFinderWeb.png"),
+  LandingPage: require("./assets/imgs/LandingPage.png"),
 };
 
 export const MY_SKILLS = [
@@ -82,5 +85,23 @@ export const MY_WORK = [
     name: "Todo App",
     image: IMAGEs.todoApp,
     link: "https://github.com/thekevinportela/todo-app",
+  },
+  {
+    id: 5,
+    name: "HungryDevs",
+    image: IMAGEs.hungryDevs,
+    link: "https://github.com/thekevinportela/hungrydevs",
+  },
+  {
+    id: 6,
+    name: "GithubFinderWeb",
+    image: IMAGEs.githubFinderWeb,
+    link: "https://github.com/thekevinportela/github-finder-app",
+  },
+  {
+    id: 7,
+    name: "LandingPage",
+    image: IMAGEs.LandingPage,
+    link: "https://github.com/thekevinportela/business-landing-page",
   },
 ];
