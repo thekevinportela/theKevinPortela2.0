@@ -31,13 +31,17 @@ const AboutMe = () => {
           flexDir={"column"}
           margin={5}
           borderRadius={"3xl"}
-          h={{ base: "md", md: "2xs" }}
           bg={"#000"}
           maxWidth={700}
           borderLeftColor={"#aaa"}
           borderLeftWidth={5}
         >
-          <Text color={"#fff"} fontSize={20} textAlign={"center"}>
+          <Text
+            color={"#fff"}
+            fontSize={20}
+            textAlign={"center"}
+            marginTop={"4"}
+          >
             YOUR PROJECT IS IN GOOD HANDS
           </Text>
           <Text
@@ -47,14 +51,18 @@ const AboutMe = () => {
             textAlign={"left"}
             lineHeight={"24px"}
           >
-            Passionate Software Engineer with over 1 year of mobile application
-            development experience as a key member of Caribu's development team
-            building cross-platform native and web applications using React
-            Native and front-end knowledge for upgradation support. Dedicated to
-            continuously discovering, evaluating, and implementing new
-            technologies to maximize development efficiency. Seeking to leverage
-            and expand proven competence in software feature development,
-            implementation, and problem-solving.
+            Highly motivated Software Engineer with 2 years of experience in web
+            and mobile application development. Proven ability to work
+            effectively as a key member of agile development teams, contributing
+            to the design, implementation, and maintenance of robust and
+            high-performance applications. A lifelong learner always dedicated
+            to improvement and growth by continuously discovering, evaluating,
+            and implementing new technologies to maximize development efficiency
+            and deliver exceptional results. Seeking a new opportunity to
+            leverage my proven competence in software feature development,
+            detailed analysis, implementation, and problem-solving. Well-versed
+            in HTML, CSS, JavaScript, Typescript, React.js, React Native, C#,
+            .Net, and other programming frameworks.
           </Text>
         </Center>
       </Center>

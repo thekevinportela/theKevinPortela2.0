@@ -29,7 +29,6 @@ const TechnicalSkills = ({ width }) => {
             <GridItem>
               <motion.div
                 whileHover={{
-                  color: "#000",
                   scale: 1.2,
                 }}
               >
